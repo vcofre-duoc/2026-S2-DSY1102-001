@@ -1,0 +1,46 @@
+/* CSS: estilo independiente de FXML y lógica. */
+.root {
+    -fx-font-family: Arial;
+    -fx-background-color: #f7f9fc;
+}
+
+.panel {
+    -fx-background-color: #f7f9fc;
+}
+
+.cabecera {
+    -fx-background-color: #e3eff8;
+}
+
+.titulo {
+    -fx-font-size: 24px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #174a75;
+}
+
+.button {
+    -fx-padding: 7 13;
+    -fx-cursor: hand;
+}
+
+.principal {
+    -fx-background-color: #276da8;
+    -fx-text-fill: white;
+}
+
+.principal:hover {
+    -fx-background-color: #174a75;
+}
+
+.text-field:focused {
+    -fx-border-color: #276da8;
+}
+
+.campo-error {
+    -fx-border-color: #c92d2d;
+    -fx-border-width: 2;
+}
+
+.error {
+    -fx-text-fill: #c92d2d;
+}

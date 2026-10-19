@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?><?import javafx.scene.control.*?>
+<!-- VIEW 1: fx:controller vincula FXML con Java. -->
+<VBox xmlns:fx="http://javafx.com/fxml/1" fx:controller="cl.duoc.estudiantes.controller.InicioController"
+      alignment="CENTER" spacing="16" styleClass="panel">
+    <Label text="Gestión de Estudiantes" styleClass="titulo"/>
+    <Label text="Ingrese su nombre"/>
+    <TextField fx:id="txtUsuario" maxWidth="300" onAction="#ingresar"/>
+    <Button text="Ingresar" onAction="#ingresar" styleClass="principal"/>
+    <Label fx:id="lblMensaje" styleClass="error"/>
+</VBox>

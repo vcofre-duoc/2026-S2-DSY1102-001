@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.scene.layout.*?><?import javafx.scene.control.*?><?import javafx.geometry.Insets?>
+<!-- VIEW 2: fx:id coincide con atributos @FXML del Controller. -->
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="cl.duoc.estudiantes.controller.AlumnosController"
+            styleClass="panel">
+    <top>
+        <VBox spacing="7" styleClass="cabecera">
+            <padding>
+                <Insets top="15" right="20" bottom="15" left="20"/>
+            </padding>
+            <Label text="Registro de estudiantes" styleClass="titulo"/>
+            <Label fx:id="lblUsuario"/>
+            <Button text="Volver" onAction="#volver"/>
+        </VBox>
+    </top>
+    <center>
+        <VBox spacing="12">
+            <padding>
+                <Insets top="15" right="20" bottom="15" left="20"/>
+            </padding>
+            <GridPane hgap="10" vgap="9">
+                <Label text="Nombre" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtNombre" GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+                <Label text="Confirmar nombre" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtConfirmar" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+                <Label text="Edad" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                <TextField fx:id="txtEdad" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+                <Label text="Carrera" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+                <ComboBox fx:id="cmbCarrera" prefWidth="240" GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+            </GridPane>
+            <HBox spacing="10">
+                <Button fx:id="btnAgregar" text="Agregar" onAction="#agregar" styleClass="principal"/>
+                <Button text="Eliminar seleccionado" onAction="#eliminar"/>
+                <Button text="Limpiar" onAction="#limpiar"/>
+            </HBox>
+            <TextField fx:id="txtBuscar" promptText="Buscar por nombre o carrera"/>
+            <TableView fx:id="tabla" VBox.vgrow="ALWAYS" prefHeight="260">
+                <columns>
+                    <TableColumn fx:id="colNombre" text="Nombre (doble clic para editar)" prefWidth="300"/>
+                    <TableColumn fx:id="colCarrera" text="Carrera" prefWidth="240"/>
+                    <TableColumn fx:id="colEdad" text="Edad" prefWidth="110"/>
+                </columns>
+            </TableView>
+            <Label fx:id="lblEstado" text="Ingrese datos para registrar."/>
+        </VBox>
+    </center>
+</BorderPane>
