@@ -6,7 +6,7 @@
 
 Dos pantallas: bienvenida y gestión de estudiantes. Permite agregar, listar, seleccionar, editar el nombre con doble clic, eliminar, filtrar por nombre o carrera y ordenar haciendo clic en encabezados. Los datos permanecen en memoria mientras la aplicación esté abierta.
 
-## Relación con las cuatro PPT
+## Contenido
 
 | PPT | Concepto | Archivo o método |
 |---|---|---|
