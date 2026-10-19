@@ -21,7 +21,7 @@ Dos pantallas: bienvenida y gestión de estudiantes. Permite agregar, listar, se
 
 ## Orden sugerido para construirlo en clases
 
-1. Crear proyecto Maven con JDK 17 y configurar `pom.xml`.
+1. Crear proyecto Maven con JDK 17 o superior y configurar `pom.xml`.
 2. Crear `Main.java` como punto de entrada y `App.java` para JavaFX.
 3. Crear el modelo `Estudiante` con Properties y getters/setters.
 4. Crear `Datos` con `ObservableList<Estudiante>`.
