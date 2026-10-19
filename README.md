@@ -37,9 +37,9 @@ Dos pantallas: bienvenida y gestión de estudiantes. Permite agregar, listar, se
 
 ## Ejecutar en IntelliJ
 
-1. Descomprimir el ZIP y abrir la carpeta con **File > Open**.
+1. Clonar Repositorio y abrir la carpeta con **File > Open**.
 2. Esperar que Maven descargue las dependencias (requiere Internet la primera vez).
-3. Seleccionar JDK 17.
+3. Seleccionar JDK 17 o superior.
 4. Ejecutar `cl.duoc.estudiantes.Main`. También se puede usar `mvn javafx:run`.
 
 ## Pruebas recomendadas
