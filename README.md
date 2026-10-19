@@ -1,6 +1,6 @@
 # Gestión de Estudiantes — JavaFX MVC
 
-**DSY1102 · Java 17 · Maven · IntelliJ IDEA**
+**DSY1102 · Java · Maven · IntelliJ IDEA**
 
 ## ¿Qué hace?
 
